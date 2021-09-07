@@ -1,7 +1,10 @@
 :root{
-    --margleft: 10px
+    --margleft: 10px;
+    --textbackground: rgba(255, 255, 255, 0.822);
 }
-
+.aboutme, .contact-info, .resume, #work, .work{
+margin-left: var(--margleft);
+}
 html{
     scroll-behavior: smooth;
 }
@@ -41,18 +44,10 @@ body{
 }
 
 p{
-    background-color: rgba(255, 255, 255, 0.822);
-}
-.aboutme{
-    margin-left: var(--margleft);
-}
-
-#work{
-    margin-left: var(--margleft);
+    background-color: var(--textbackground)
 }
 
 .work{
-    margin-left: var(--margleft);
     display: flex;
     /* flex:1 1; */
     flex-wrap: wrap;
@@ -72,4 +67,11 @@ p{
 #img1{
     max-width: 100%;
     flex: 2;
+}
+
+.contact-info ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: var(--textbackground);
 }
