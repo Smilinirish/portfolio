@@ -1,89 +1,186 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/reset.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Alexander VanOsdol</title>
 </head>
-<body>
-    <header>
-        <h1>Alexander VanOsdol</h1>
-        <nav>
-            <ul>
-                <li><a href="#"><strong>Home</strong></a></li>
-                <li><a href="#about-me"><strong>About Me</strong></a></li>
-                <li><a href="#work"><strong>Work</strong></a></li>
-                <li><a href="#resume"><strong>Resume</strong></a></li>
-                <li><a href="#contact-info"><strong>Contact Information</strong></a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
 
+    <nav class="navbar navbar-light bg-secondary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Alexander 'Xander' VanOsdol</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#aboutme">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Work
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <p class='m-2'>GitHub</p>
+                                <li><a class="dropdown-item" href="https://github.com/Smilinirish/date-inght-in-a-box" target="_blank">Date Night in a Box</a></li>
+                                <li><a class="dropdown-item" href="https://github.com/Smilinirish/weather-dashbored" target="_blank">Weather Dashboard</a></li>
+                                <li>
+                                <li><a class="dropdown-item" href="https://github.com/Smilinirish/password-gen" target="_blank">Password Generator</a></li>
+                                <li>
+                                <li><a class="dropdown-item" href="https://smilinirish.github.io/code-quiz/">Code Quiz</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <p class="m-2">Live page</p>
+                                <li><a class="dropdown-item" href="https://smilinirish.github.io/date-inght-in-a-box/" target="_blank">Date Night in a Box</a></li>
+                                <li><a class="dropdown-item" href="https://smilinirish.github.io/weather-dashbored/" target="_blank">Weather Dashboard</a></li>
+                                <li><a class="dropdown-item" href="https://smilinirish.github.io/password-gen/" target="_blank">Password Generator</a></li>
+                                <li><a class="dropdown-item" href="https://smilinirish.github.io/code-quiz/">Code Quiz</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Information</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
     <main>
-        <br>
-        <Section>
-            <article class="aboutme">
-                <h1>About me</h1>
-                <!-- placeholder for now -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum soluta praesentium voluptatibus pariatur optio, enim veniam odio itaque cum corrupti. Quo odit, ducimus voluptas minus dicta eaque libero fugiat.</p>
-            </article>
-        </Section>
-        <br>
-        <section id="bigwork">
-                    <h1 id="work">Work</h1>
-                <!-- place holder for now -->
-                <div class="work">
-                
-                <article id="img1">
-                    <a href="https://smilinirish.github.io/password-gen" target="_blank" rel="noreferrer noopener">
-                    <img src=assets\Screenshot.png alt="Password Generator" >
-                    </a>
-                </article>   
-                <article>
-                    <a href="#">
-                    <img src="https://via.placeholder.com/450/3279a8/ffffff?text=place holder" alt="placeholder" >
-                    </a>
-                </article>
-                <article>
-                    <a href="#">
-                    <img src="https://via.placeholder.com/450/3279a8/ffffff?text=place holder" alt="placeholder" >
-                    </a>
-                </article>
-                <article>
-                    <a href="#">
-                    <img src="https://via.placeholder.com/450/3279a8/ffffff?text=place holder" alt="placeholder" >
-                    </a>
-                </article>
-                <article>
-                    <a href="#">
-                    <img src="https://via.placeholder.com/450/3279a8/ffffff?text=place holder" alt="placeholder" >
-                    </a>
-                </article>
+        <article class="aboutme">
+            <h1>About me</h1>
+            <!-- placeholder for now -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eum soluta praesentium
+                voluptatibus pariatur optio, enim veniam odio itaque cum corrupti. Quo odit, ducimus voluptas minus
+                dicta eaque libero fugiat.</p>
+        </article>
+        <section class="d-flex justify-content-center work">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets\images\date-night-in-a-box.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets\images\weather-dash-board.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets\Screenshot.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets\images\QuestionScreen.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
         <br>
+        <section class="d-flex justify-content-center">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\images\date-night-in-a-box.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Date Night In a Box</h5>
+                            <p class="card-text">A quick easy way to plan a night out</p>
+                            <a href="https://smilinirish.github.io/date-inght-in-a-box/" target="_blank"
+                                class="btn btn-primary">live page</a>
+                            <a href="https://github.com/Smilinirish/date-inght-in-a-box" target="_blank"
+                                class="btn btn-primary">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\Screenshot.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Password Generator</h5>
+                            <p class="card-text">A quick and simple password Generator</p>
+                            <a href="https://smilinirish.github.io/password-gen/" target="_blank"
+                                class="btn btn-primary">Live Page</a>
+                            <a href="https://github.com/Smilinirish/password-gen" target="_blank"
+                                class="btn btn-primary">GitHub</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-6">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\images\weather-dash-board.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">weather Dashboard</h5>
+                            <p class="card-text">A straight forward Weather Dashboard with a 5 day forcast</p>
+                            <a href="https://smilinirish.github.io/weather-dashbored/" target="_blank"
+                                class="btn btn-primary">Live Page</a>
+                            <a href="https://github.com/Smilinirish/weather-dashbored" target="_blank"
+                                class="btn btn-primary">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets\images\QuestionScreen.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">a fun interactive code quiz</p>
+                            <a href="https://smilinirish.github.io/code-quiz/" target="_blank"
+                                class="btn btn-primary">Live page</a>
+                            <a href="https://github.com/Smilinirish/code-quiz" target="_blank"
+                                class="btn btn-primary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="resume" id="resume">
             <article>
                 <h1><strong>Resume</strong></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, illo expedita! Quidem delectus aliquid odit ex! Voluptatum incidunt aliquid quae, neque harum ratione sed praesentium atque ducimus laboriosam magni dolor.</p>
+                <a href="assets\resume.pdf" target="_blank">Resume</a>
             </article>
         </section>
-        <br>
-        <section>
-            <article class="contact-info" id="contact-info">
-                <h1><Strong>Contact Information</Strong></h1>
-                <ul>
-                    <li><strong>Phone</strong> xxx-xxx-xxxx</li>
-                    <li><strong>E-mail</strong> example@email.com</li>
-                    <li><strong>GitHub</strong><a href="https://github.com/Smilinirish"> https://github.com/Smilinirish</a></li>
-                </ul>
-            </article>
-        </section>
-        <br>
-        <br>
+        <article class="contact-info" id="contact-info">
+            <h1><Strong>Contact Information</Strong></h1>
+            <ul>
+                <li><strong>Phone</strong> xxx-xxx-xxxx</li>
+                <li><strong>E-mail</strong> example@email.com</li>
+                <li><strong>GitHub</strong><a href="https://github.com/Smilinirish" target="_blank">
+                        https://github.com/Smilinirish</a></li>
+                <li><Strong>linked-in</Strong> <a href="https://www.linkedin.com/in/alex-vanosdol-510bb7111/" target="_blank">https://www.linkedin.com/in/alex-vanosdol-510bb7111/</a></li>
+            </ul>
+        </article>
+
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
